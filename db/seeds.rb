@@ -1,0 +1,81 @@
+puts "🌱 Seeding users..."
+
+User.create()
+User.create()
+User.create()
+User.create()
+User.create()
+User.create()
+User.create()
+User.create()
+User.create()
+User.create()
+User.create()
+User.create()
+User.create()
+User.create()
+User.create()
+User.create()
+User.create()
+User.create()
+User.create()
+User.create()
+User.create()
+User.create()
+User.create()
+User.create()
+User.create()
+User.create()
+User.create()
+User.create()
+User.create()
+User.create()
+User.create()
+User.create()
+
+puts "🌱 Seeding ghosts..."
+
+Ghost.create()
+Ghost.create()
+Ghost.create()
+Ghost.create()
+Ghost.create()
+Ghost.create()
+Ghost.create()
+Ghost.create()
+Ghost.create()
+Ghost.create()
+Ghost.create()
+Ghost.create()
+Ghost.create()
+Ghost.create()
+Ghost.create()
+Ghost.create()
+
+puts "🌱 Seeding houses..."
+
+House.create()
+House.create()
+House.create()
+House.create()
+House.create()
+House.create()
+House.create()
+House.create()
+House.create()
+House.create()
+House.create()
+House.create()
+House.create()
+House.create()
+House.create()
+House.create()
+House.create()
+
+puts "🌱 Seeding hauntings..."
+
+20.times do
+    Haunting.create(ghost: Ghost.all.sample, house: House.all.sample)
+end
+
+puts "✅ Done seeding!"

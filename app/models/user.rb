@@ -1,4 +1,4 @@
 class User < ActiveRecord::Base
-    belongs_to :ghost
-    belongs_to :house
+    has_one :ghost
+    has_many :houses
 end
