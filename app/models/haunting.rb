@@ -1,4 +1,4 @@
 class Haunting < ActiveRecord::Base
     belongs_to :ghost
-    bolongs_to :house
+    belongs_to :house
 end

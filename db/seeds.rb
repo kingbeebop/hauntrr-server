@@ -31,12 +31,12 @@ puts "🌱 Seeding houses..."
 
 House.create(name: "3 Blood Street", location: "3 Blood Street", description: "Fresh paint job!  Slight plumbing problems.", picUrl: "https://m.media-amazon.com/images/M/MV5BOGRiYmVlYjQtZWQyNC00MjA3LWJmMGUtOWNlNDExNjRlNDZiXkEyXkFqcGdeQXVyMDU5NDcxNw@@._V1_.jpg", user_id: User.where(name: "Alex").first.id, distance: rand(1...100))
 House.create(name: "Hill House", location: "10 Sutterheim Hill", description: "Gothic treasure in the hills.  Sun-drenched living room, blood-drenched foyer.", picUrl: "https://akns-images.eonline.com/eol_images/Entire_Site/2018924/rs_1024x683-181024103742-1024-2-hill-house-ch-102418.jpg?fit=around%7C1024:683&output-quality=90&crop=1024:683;center,top", user_id: User.all.sample.id, rand(1...100))
-House.create(name: "", location: "", description: "", user_id: User.where(name: "Alex").first.id, distance: rand(1...100))
-House.create(name: "", location: "", description: "", user_id: User.where(name: "Alex").first.id, distance: rand(1...100))
-House.create(name: "", location: "", description: "", user_id: User.where(name: "Alex").first.id, distance: rand(1...100))
-House.create(name: "", location: "", description: "", user_id: User.where(name: "Alex").first.id, distance: rand(1...100))
-House.create(name: "", location: "", description: "", user_id: User.where(name: "Alex").first.id, distance: rand(1...100))
-House.create(name: "", location: "", description: "", user_id: User.where(name: "Alex").first.id, distance: rand(1...100))
+House.create(name: "Test house", location: "", description: "", user_id: User.where(name: "Alex").first.id, distance: rand(1...100))
+House.create(name: "Test house", location: "", description: "", user_id: User.where(name: "Alex").first.id, distance: rand(1...100))
+House.create(name: "Test house", location: "", description: "", user_id: User.where(name: "Alex").first.id, distance: rand(1...100))
+House.create(name: "Test house", location: "", description: "", user_id: User.where(name: "Alex").first.id, distance: rand(1...100))
+House.create(name: "Test house", location: "", description: "", user_id: User.where(name: "Alex").first.id, distance: rand(1...100))
+House.create(name: "Test house", location: "", description: "", user_id: User.where(name: "Alex").first.id, distance: rand(1...100))
 
 puts "🌱 Seeding hauntings..."
 

@@ -42,12 +42,12 @@ class ApplicationController < Sinatra::Base
             is_ghost: params[:is_ghost]
         )
 
-        if(params[:is_ghost]) do
+        if(params[:is_ghost])
             Ghost.create(
                 name: params[:name],
                 picUrl: params[:picUrl],
                 user_id: newUser.id
-            ) 
+            )
         end
         
         newUser.to_json
@@ -74,7 +74,7 @@ class ApplicationController < Sinatra::Base
             password: params[:password]
         )
 
-        if patchedUser.is_ghost do
+        if patchedUser.is_ghost
             patchedUser.ghost.update(name: params[:name])
         end
 
